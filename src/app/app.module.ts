@@ -8,12 +8,20 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
 import {HttpClientModule} from '@angular/common/http';
 import { library, icon } from '@fortawesome/fontawesome-svg-core';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent} from './componentes/educacion/educacion.component';
+import { SkillsComponent} from './componentes/skills/skills.component';
+import { ProyectosComponent} from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IniciarSesionComponent,
     EncabezadoComponent,
+    EducacionComponent,
+    SkillsComponent,
+    ProyectosComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,
