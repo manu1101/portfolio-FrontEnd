@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
+  url: string = 'https://argprogangular.firebaseapp.com/'
   constructor(private htttp:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.htttp.get('json');
+    return this.htttp.get<any>(this.url+'iniciar-sesion');
   }
 }
