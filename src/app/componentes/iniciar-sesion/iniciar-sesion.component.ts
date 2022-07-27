@@ -13,7 +13,7 @@ export class IniciarSesionComponent implements OnInit {
   constructor(private formBuilder:FormBuilder, private autenticacionService:AutenticacionService, private ruta:Router) {
     this.form = this.formBuilder.group(
       {
-        email:['',[Validators.required, Validators.email]],
+        username:['',[Validators.required, Validators.email]],
         password:['',[Validators.required, Validators.minLength(8)]]
       })
    }
