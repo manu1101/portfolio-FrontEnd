@@ -11,6 +11,6 @@ export class PortfolioService {
   constructor(private htttp:HttpClient) { }
 
   obtenerDatos():Observable<any>{
-    return this.htttp.get<any>(this.url+'iniciar-sesion');
+    return this.htttp.get<any>(this.url+'api/login/iniciar-sesion');
   }
 }

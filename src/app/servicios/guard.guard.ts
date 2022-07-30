@@ -19,7 +19,7 @@ export class GuardGuard implements CanActivate {
         return true;
       }
       else{
-        this.rutas.navigate(['/iniciar-sesion']);
+        this.rutas.navigate(['/api/login/iniciar-sesion']);
         return false;
       }
   }
