@@ -3,14 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PortfolioService {
+  url: string = 'https://argprogangular.firebaseapp.com/';
+  constructor(private htttp: HttpClient) {}
 
-  url: string = 'https://argprogangular.firebaseapp.com/'
-  constructor(private htttp:HttpClient) { }
-
-  obtenerDatos():Observable<any>{
-    return this.htttp.get<any>(this.url+'api/login/iniciar-sesion');
+  obtenerDatos(): Observable<any> {
+    return this.htttp.get<any>(this.url + 'api/login/iniciar-sesion');
   }
 }

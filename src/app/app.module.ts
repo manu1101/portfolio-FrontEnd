@@ -17,6 +17,7 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { PortfolioService } from './servicios/portfolio.service';
 import { InterceptorService } from './servicios/interceptor.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
