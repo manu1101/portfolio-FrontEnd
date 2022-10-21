@@ -7,7 +7,7 @@ import { GuardGuard } from './servicios/guard.guard';
 const routes: Routes = [
   {path: 'iniciar-sesion', component:IniciarSesionComponent},
   {path: 'portfolio', component:PortfolioComponent, canActivate:[GuardGuard]},
-  {path: '', redirectTo:'iniciar-sesion', pathMatch:'full'}
+  {path: '', redirectTo:'portfolio', pathMatch:'full'}
 ];
 
 @NgModule({

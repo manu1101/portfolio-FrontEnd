@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PortfolioService {
-  url: string = 'https://argprogangular.firebaseapp.com/';
+  url: string = 'http://localhost:8080/';
   constructor(private htttp: HttpClient) {}
 
   obtenerDatos(): Observable<any> {
