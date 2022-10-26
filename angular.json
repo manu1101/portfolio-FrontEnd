@@ -104,7 +104,6 @@
       }
     }
   },
-  "defaultProject": "portfolioWeb",
   "cli": {
     "analytics": false
   }
