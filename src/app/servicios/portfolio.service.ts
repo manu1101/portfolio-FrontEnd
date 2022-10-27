@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PortfolioService {
-  url: string = 'https://portfolio-caballerojm.web.app/';
+  url: string = 'http://localhost:4200/';
   constructor(private htttp: HttpClient) {}
 
   obtenerDatos(): Observable<any> {
